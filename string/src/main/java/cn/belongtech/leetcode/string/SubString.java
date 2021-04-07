@@ -1,7 +1,6 @@
 package cn.belongtech.leetcode.string;
 
 import java.util.HashMap;
-import java.util.HashSet;
 
 /**
  * 无重复字符的最长子串
@@ -24,7 +23,7 @@ public class SubString {
         // 右指针
         int right = 0;
         // 重复字符记录
-        HashMap<Character, Integer> occur = new HashMap<>();
+        HashMap<Character, Integer> occur = new HashMap<>(128);
 
         // 遍历字符串
         while(right < s.length()) {
