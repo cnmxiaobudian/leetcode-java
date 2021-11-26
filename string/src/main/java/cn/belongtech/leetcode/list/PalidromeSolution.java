@@ -45,6 +45,9 @@ public class PalidromeSolution {
         return recursivelyCheck(head);
     }
 
+    /**
+     * 双向指针
+     */
     private boolean recursivelyCheck(ListNode currentNode) {
         if (currentNode != null) {
             if (!recursivelyCheck(currentNode.next)) {
