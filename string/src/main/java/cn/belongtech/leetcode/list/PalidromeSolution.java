@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Objects;
 
 /**
+ * 回文链表
  * https://leetcode-cn.com/problems/palindrome-linked-list/
  * @author sunliang
  * @version 1.0

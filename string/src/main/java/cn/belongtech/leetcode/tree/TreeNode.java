@@ -11,17 +11,21 @@ public class TreeNode<T> {
     /**
      * 节点数据
      */
-    private T data;
+    public T data;
 
     /**
      * 左节点
      */
-    private TreeNode<T> left;
+    public TreeNode<T> left;
 
     /**
      * 右节点
      */
-    private TreeNode<T> right;
+    public TreeNode<T> right;
+
+    public TreeNode(T data) {
+        this.data = data;
+    }
 
     public T getData() {
         return data;

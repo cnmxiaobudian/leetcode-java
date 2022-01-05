@@ -8,12 +8,11 @@ import java.util.Objects;
  * @author sunliang
  * @version 1.0
  */
-public class CommonSubString {
+public class CommonPrefixStringSolution {
 
     /**
      * 最长公共前缀
-     * @param strs 字符串
-     * @return 最长公共前缀
+     * 依次比较
      */
     public String longestCommonPrefix(String[] strs) {
         if(Objects.isNull(strs) || strs.length == 0) {
@@ -42,12 +41,5 @@ public class CommonSubString {
         }
 
         return str1.substring(0, end);
-    }
-
-    public static void main(String[] args) {
-        CommonSubString commonSubString = new CommonSubString();
-
-        String[] strs = new String[]{"flower","flow","flight"};
-        System.out.println(commonSubString.longestCommonPrefix(strs));
     }
 }

@@ -5,7 +5,7 @@ package cn.belongtech.leetcode.list;
  * @version 1.0
  */
 public class ListNode {
-    private int val;
+    int val;
 
     ListNode next;
 
